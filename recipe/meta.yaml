@@ -11,25 +11,22 @@ source:
   sha256: 794d07d5a28781231ac335a1561b8442f8648ca07cd518310aeb45d6f0807ef6
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  string: pyh{{ PKG_HASH }}_{{ PKG_BUILDNUM }}
 
 requirements:
   host:
     - pip
     - poetry
-    - python >=3.6
+    - python 
   run:
-    - python >=3.6
+    - python 
 
 test:
   imports:
     - langcodes
-  commands:
-    - pip check
-  requires:
-    - pip
 
 about:
   home: http://github.com/rspeer/langcodes
@@ -45,4 +42,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - thewchan
+    - open-ce/open-ce-dev-team
