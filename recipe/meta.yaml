@@ -33,7 +33,7 @@ about:
   summary: Labels and compares human languages in a standardized way
   license: MIT
   license_family: MIT
-  license_file: LICENSE
+  license_file: LICENSE.txt
   description: |
     Langcodes is a toolkit for working with and comparing the
      standardized codes for languages, such as 'en' for English, 'es'
