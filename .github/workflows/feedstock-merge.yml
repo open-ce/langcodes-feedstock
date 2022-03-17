@@ -15,4 +15,4 @@ jobs:
         with:
           auto-update-conda: true
           python-version: "3.9"
-      - uses: open-ce/open-ce/.github/actions/feedstock-merge@main
+      - uses: cdeepali/open-ce/.github/actions/feedstock-merge@dc-fix-pr-validation
